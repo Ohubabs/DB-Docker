@@ -17,6 +17,6 @@ resource "aws_instance" "Docker" {
     }  
 }
 
-resource "aws_eip" "Docker_EIP" {
+/*resource "aws_eip" "Docker_EIP" {
   instance = aws_instance.Docker.id
-}
+}*/
