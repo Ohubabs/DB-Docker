@@ -1,0 +1,25 @@
+pipeline{
+    agent { 
+        label 'terraform'
+  }
+    stages{
+        //stage('Clone Code'){
+            //steps{
+                //sh "echo cloning code"
+                //sh "echo clone code complete"
+                //git 'https://github.com/Konoha-23/konoha-roboshop.git'
+            //}
+        //}
+        stage('Provision ECZ instance for Docker'){
+            steps{
+              withCredentials([aws(accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: 'aws_cred', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY')]) {
+                sh "echo 'Provision ECZ instance for Docker'"
+                sh "terraform init"
+                sh "terraform validate"
+                sh "terraform plan"
+                sh "terraform apply --auto-approve"
+              }
+            }
+        }
+    }
+}
