@@ -7,7 +7,7 @@ pipeline{
             //steps{
                 //sh "echo cloning code"
                 //sh "echo clone code complete"
-                //git 'https://github.com/Konoha-23/konoha-roboshop.git'
+                //git 'https://github.com/DragonBall-EKS/DBZ-Docker.git'
             //}
         //}
         stage('Provision ECZ instance for Docker'){
