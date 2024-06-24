@@ -6,11 +6,13 @@ resource "aws_instance" "Docker" {
     availability_zone = var.availability_zone
     associate_public_ip_address = true  
     vpc_security_group_ids = var.vpc_security_group_id
-    /*ebs_block_device = {
-      volume_size = 40 
-      #encrypted  = true
-      volume_type = gp3 
-    }*/ 
+    root_block_device {
+      volume_size = 10 
+      encrypted  = true
+      volume_type = "gp3" 
+      tags ={
+        "Name" = "Docker_Volume"
+      }
     user_data = file("${path.module}/docker.sh")        
     tags = {
       "name" = "Docker" 
