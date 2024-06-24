@@ -1,7 +1,7 @@
-variable "public_subnet_id" {
+variable "docker_public_subnet_id" {
   type        = any
   description = "VPC public_subnet_ids"
-  default     =  "subnet-01bca0cf52b733391" #Project 1 Subnet
+  default     =  "subnet-0cdbd9bf9643c5dd9" #Project 1 Subnet
 }
 
 variable "instance_type" {
@@ -13,7 +13,7 @@ variable "instance_type" {
 variable "availability_zone" {
   type        = string
   description = "VPC Availability Zone"
-  default     = "us-west-2b"
+  default     = "us-west-2c"
 }
 
 variable "vpc_security_group_id" {
@@ -27,3 +27,4 @@ variable "ami_id" {
   description = "Ubuntu AMI ID"
   default     = "ami-0efcece6bed30fd98" 
 }
+
