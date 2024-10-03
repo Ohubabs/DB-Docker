@@ -15,7 +15,8 @@ For this project, you are to setup a pipeline to provision an EC2 instance with 
 
 ![Screenshot 2024-06-24 at 3 21 50 PM](https://github.com/user-attachments/assets/9a38d59a-7c02-4558-86f4-78c891ae2f41)
 
-![Screenshot 2024-06-24 at 3 22 06 PM](https://github.com/user-attachments/assets/fc923557-7feb-4b01-9ae8-26c5117d709f)
+![Screenshot 2024-06-24 at 3 22 06 PM](https://github.com/user-attachments/assets/514958ed-5787-477d-90a8-ee933829447e)
+
 
 ### Step 3: Go to “Configuration”, select “Poll SCM” and enter the details for your github repository or copy, edit, and paste the Jenkinsfile in this repo.
 
