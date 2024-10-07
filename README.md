@@ -7,7 +7,8 @@ For this project, you are to setup a pipeline to provision an EC2 instance with 
 
 ## Prerequisites
 
-- Running Jenkins applications (To set up Jenkins check Project part 1: https://github.com/Ohubabs/DB-Pipeline.git)
+- Running Jenkins applications (To set up Jenkins check Project part 1: https://github.com/Ohubabs/DB-Pipeline.git).
+- EC2 Instance with Terraform installed.
 - Prior Knowledge of Terraform, Jenkins, and Docker.
 
 ## Docker Instance Setup
