@@ -5,6 +5,11 @@
 
 For this project, you are to setup a pipeline to provision an EC2 instance with Docker installed. After provisioning the instance, configure it as a worker node for carrying out Docker related tasks. 
 
+## Prerequisites
+
+- Running Jenkins applications (To set up Jenkins check Project part 1: https://github.com/Ohubabs/DB-Pipeline.git)
+- Prior Knowledge of Terraform, Jenkins, and Docker.
+
 ## Docker Instance Setup
 
 ### Step 1: Go to “New Item”, Select “Pipeline” and  give it a name e.g. “Docker”
